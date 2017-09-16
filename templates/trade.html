@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <form action="/submitTrade" method="POST">
+    <select name="side">
+      <option value="b">Buy</option>
+      <option value="s">Sell</option>
+    </select>
+    symbol <input type="text" name="symbol">
+    quantity <input type="number" name="quantity">
+    <input type="submit" class="btn btn-info" value="Execute">
+  </form>
+  </body>
+</html>
