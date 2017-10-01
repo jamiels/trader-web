@@ -55,4 +55,4 @@ def get_quote(symbol):
     return price
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0') # host='0.0.0.0' needed for docker
