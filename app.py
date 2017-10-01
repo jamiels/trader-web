@@ -13,7 +13,7 @@ import numpy as np
 import scipy as sp
 import pandas as pd
 import matplotlib as mp
-import plotly
+#simport plotly
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
@@ -53,6 +53,10 @@ def get_quote(symbol):
     price_box = soup.find('div', attrs={'class':'price'})
     price = price_box.text
     return price
+
+@app.route("/sample")
+def show_sample():
+    return render_template('sample.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0') # host='0.0.0.0' needed for docker
