@@ -1,0 +1,11 @@
+bs4
+requests
+urllib3
+Flask
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+plotly
+datetime
