@@ -9,6 +9,11 @@
 
 from flask import Flask, render_template, request
 import urllib.request as req
+import numpy as np
+import scipy as sp
+import pandas as pd
+import matplotlib as mp
+import plotly
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
